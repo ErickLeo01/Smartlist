@@ -4,16 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4d4cc36-ca69-4a2f-93e3-78f224fad498" name="Changes" comment="" />
+    <list default="true" id="e4d4cc36-ca69-4a2f-93e3-78f224fad498" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/back/smartlist/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back/smartlist/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ErickLeo01"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ErickLeo01/Smartlist.git",
+    "accountId": "65302386-6a6a-4b39-9218-e47f513b4f3f"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3LYEbvxEKl9fJkuAjRZqmotGidP" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -22,6 +39,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/FACULDADE/CÓDIGOS EM JAVA/PROJETOS-API/smartlist"
   }
