@@ -26,14 +26,13 @@ public class ProductEntity {
 
     private Integer quantity;
 
-    private Double price = this.getQuantity() * this.getPrice();
+    private Double price;
 
-    @NotBlank(message = "informe se o produto foi comprado.")
+    @NotNull(message = "Informe se o produto foi comprado ou não.")
     private boolean status;
 
     @ManyToOne
     @JoinColumn(name = "shopping_list_id")
     private ShoppingListEntity shoppingListEntity;
-
 
 }

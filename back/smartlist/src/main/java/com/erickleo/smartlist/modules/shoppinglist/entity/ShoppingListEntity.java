@@ -29,7 +29,7 @@ public class ShoppingListEntity {
     @NotBlank(message = "Insira uma descrição da lista.")
     private String description;
 
-    @NotBlank(message = "Insira a data de criação.")
+    @NotNull(message = "Insira a data de criação.")
     private LocalDate creationDate;
 
     @OneToMany(mappedBy = "shoppingListEntity")

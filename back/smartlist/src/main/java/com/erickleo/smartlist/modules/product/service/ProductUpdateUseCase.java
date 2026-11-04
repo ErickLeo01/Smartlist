@@ -38,10 +38,6 @@ public class ProductUpdateUseCase {
             productEntity.setQuantity(productDTO.quantity());
         }
 
-        if (productDTO.status() != null) {
-            productEntity.setStatus(productDTO.status());
-        }
-
         ProductEntity updatedProductEntity = productRepository.save(productEntity);
 
         return new ProductDTOResponse(
