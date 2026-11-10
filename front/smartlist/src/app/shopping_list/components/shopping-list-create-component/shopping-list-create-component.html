@@ -1,0 +1,20 @@
+<h1>Bem vindo(a) ao SmartList, seu assistente de listas de compras!</h1>
+
+<div class="container">
+  <h2>Criar Nova Lista de Compras</h2>
+  <form (ngSubmit)="createShoppingList()">
+    <div class="form-group">
+
+      <label for="name"> Nome da lista: </label>
+      <input type="text" id="name" name="name" [(ngModel)]="shoppingList.name" placeholder="Digite o nome da lista" required>
+
+      <label for="description"> Descrição da lista: </label>
+      <input type="text" id="description" name="description" [(ngModel)]="shoppingList.description" placeholder="Digite a descrição da lista" required>
+
+      <label for="creationDate"> Data de criação: </label>
+      <input type="date" id="creationDate" name="creationDate" [(ngModel)]="shoppingList.creationDate" placeholder="Digite a data de criação" required>
+    </div>
+
+    <button type="submit">Criar Lista</button>
+  </form>
+</div>

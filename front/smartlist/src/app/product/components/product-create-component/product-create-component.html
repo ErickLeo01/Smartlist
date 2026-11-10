@@ -1,0 +1,31 @@
+<h1>Bem vindo(a) ao SmartList, seu assistente de listas de compras!</h1>
+
+<h3>Informe as informações do produto</h3>
+
+<form (ngSubmit)="createProduct()">
+
+  <div class="form-group">
+
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="product.name" placeholder="Nome do produto" required>
+
+
+    <label for="price">Preço:</label>
+    <input type="number" id="price" name="price" [(ngModel)]="product.price" placeholder="Preço do produto" required>
+
+
+    <label for="quantity">Quantidade:</label>
+    <input type="number" id="quantity" name="quantity" [(ngModel)]="product.quantity" placeholder="Quantidade do produto" required>
+
+    <label for="status">Status:</label>
+    <select
+    id="status"
+    name="status"
+    [(ngModel)]="product.status">
+    <option [ngValue]="true">Comprado</option>
+    <option [ngValue]="false">Não comprado</option>
+</select>
+  </div>
+
+  <button type="submit">Criar Produto</button>
+</form>

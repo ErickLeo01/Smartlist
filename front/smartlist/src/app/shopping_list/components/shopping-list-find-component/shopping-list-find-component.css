@@ -1,0 +1,126 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f4f7f5;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #1b4332;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Container principal */
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtítulo */
+h2 {
+  color: #2d6a4f;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 21px;
+}
+
+/* Grupos de formulário */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  margin-bottom: 8px;
+  color: #344e41;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Campos de entrada */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced9d2;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Área de descrição */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Efeito ao selecionar os campos */
+input:focus,
+textarea:focus {
+  border-color: #40916c;
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.15);
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 13px;
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+  background-color: #1b4332;
+  transform: translateY(-2px);
+}
+
+/* Resultado da busca */
+.resultado {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f0f7f2;
+  border-left: 4px solid #40916c;
+  border-radius: 7px;
+}
+
+/* Informações da lista */
+.resultado p {
+  color: #344e41;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  :host {
+    padding: 25px 15px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+}

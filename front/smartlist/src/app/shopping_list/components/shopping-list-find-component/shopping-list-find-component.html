@@ -1,0 +1,31 @@
+<h1>Visualizar Lista de Compras</h1>
+
+<div class="container">
+  <h2>Buscar Lista de Compras</h2>
+
+  <form (ngSubmit)="findShoppingListById(id)">
+    <div class="form-group">
+
+      <label for="id"> ID da lista </label>
+      <input type="text"
+      id="id"
+      name="id"
+      [(ngModel)]="id"
+      placeholder="Digite o ID da lista"
+      required>
+
+    </div>
+
+    <button type="submit">Buscar Lista</button>
+  </form>
+
+  @if (shoppingList) {
+    <div class="resultado">
+      <h3>Resultado da busca</h3>
+      <p> <strong> ID: </strong>  {{ shoppingList.id }}</p>
+      <p> <strong> Nome: </strong>  {{ shoppingList.name }}</p>
+      <p> <strong> Descrição: </strong>  {{ shoppingList.description }}</p>
+      <p> <strong> Data de criação: </strong>  {{ shoppingList.creationDate }}</p>
+    </div>
+  }
+</div>

@@ -16,15 +16,15 @@ public class ProductDeleteUseCase {
     private ProductRepository productRepository;
 
     public String deleteProduct(UUID idProduct) {
-
         if (idProduct == null) {
             throw new ProductNotDeleteException();
         }
 
-        ProductEntity productEntity = productRepository.findById(idProduct)
-                .orElseThrow(ProductIdNotFoundException::new);
+        if (!productRepository.existsById(idProduct)) {
+            throw new ProductIdNotFoundException();
+        }
 
-         productRepository.deleteById(idProduct);
+        productRepository.deleteById(idProduct);
 
         return "Produto deletado com sucesso";
     }

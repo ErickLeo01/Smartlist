@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>Atualizar informações do produto</h2>
+  <form (ngSubmit)="updateProduct(id)">
+    <div class="form-group">
+
+      <label for="id">ID do produto:</label>
+<input
+  type="text"
+  id="id"
+  name="id"
+  [(ngModel)]="id"
+  placeholder="Digite o ID do produto"
+  required/>
+
+      <label for="name"> Nome do produto: </label>
+      <input type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="product.name"
+      placeholder="Digite o nome do produto">
+
+      <label for="description"> Preço do produto: </label>
+      <input type="number"
+      id="price"
+      name="price"
+      [(ngModel)]="product.price"
+      placeholder="Digite a descrição da lista">
+
+      <label for="creationDate"> Quantidade: </label>
+      <input type="number"
+      id="quantity"
+      name="quantity"
+      [(ngModel)]="product.quantity"
+      placeholder="Digite a quantidade comprada">
+    </div>
+
+    <button type="submit">Atualizar Produto</button>
+  </form>

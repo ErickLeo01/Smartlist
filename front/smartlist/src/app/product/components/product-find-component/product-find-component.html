@@ -1,0 +1,34 @@
+<h1>Visualizar Produto</h1>
+
+<div class="container">
+  <h2>Buscar Produto</h2>
+
+  <form (ngSubmit)="findProductById(id)">
+    <div class="form-group">
+
+      <label for="id"> ID do Produto </label>
+      <input type="text"
+      id="id"
+      name="id"
+      [(ngModel)]="id"
+      placeholder="Digite o ID do produto"
+      required>
+
+    </div>
+
+    <button type="submit">Buscar produto</button>
+  </form>
+
+  @if (product) {
+    <div class="result">
+      <h3>Resultado da busca</h3>
+      <p> <strong> ID: </strong>  {{ product.id }}</p>
+      <p> <strong> Nome: </strong>  {{ product.name }}</p>
+      <p> <strong> Preço: </strong>  {{ product.price }}</p>
+      <p> <strong> Quantidade: </strong>  {{ product.quantity }}</p>
+      <p> <strong> Status: </strong>  {{ product.status }}</p>
+
+    </div>
+  }
+
+</div>

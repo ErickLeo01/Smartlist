@@ -15,18 +15,18 @@ export class ProductService {
   constructor(private http: HttpClient) {}
 
   public createProduct(product: ProductDTO): Observable<ProductResponseDTO> {
-    return this.http.post<ProductResponseDTO>(this.apiURL, product);
+    return this.http.post<ProductResponseDTO>(`${this.apiURL}/criar`, product);
   }
 
   public updateProduct(id: string, product: ProductDTO): Observable<ProductResponseDTO> {
-    return this.http.put<ProductResponseDTO>(`${this.apiURL}/${id}`, product);
+    return this.http.put<ProductResponseDTO>(`${this.apiURL}/atualizar/${id}`, product);
   }
 
   public deleteProduct(id: string): Observable<string> {
-    return this.http.delete<string>(`${this.apiURL}/${id}`);
+    return this.http.delete<string>(`${this.apiURL}/deletar/${id}`);
   }
 
   public findProductById(id: string): Observable<ProductResponseDTO> {
-    return this.http.get<ProductResponseDTO>(`${this.apiURL}/${id}`);
+    return this.http.get<ProductResponseDTO>(`${this.apiURL}/listar/${id}`);
   }
 }

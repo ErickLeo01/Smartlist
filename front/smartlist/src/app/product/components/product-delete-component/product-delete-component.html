@@ -1,0 +1,18 @@
+<h1>Excluir Produto</h1>
+
+<div class="container">
+  <h2>Tem certeza que deseja excluir o produto?</h2>
+  <form (ngSubmit)="deleteProduct(id)">
+
+    <label for="id">ID do produto:</label>
+
+<input
+  type="text"
+  id="id"
+  name="id"
+  [(ngModel)]="id"
+  placeholder="Digite o ID do produto"
+  required
+/>
+    <button type="submit">Excluir Produto</button>
+  </form>

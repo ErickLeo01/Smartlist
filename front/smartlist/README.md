@@ -1,8 +1,8 @@
 # 🛒 SmartList
 
-**SmartList** é uma aplicação web para gerenciamento de listas de compras e produtos, desenvolvida com o objetivo de facilitar a organização de compras de maneira simples e intuitiva.
+**SmartList** é uma aplicação web Full Stack para gerenciamento de listas de compras e produtos, desenvolvida com o objetivo de facilitar a organização e o controle de compras de maneira simples e intuitiva.
 
-O projeto utiliza **Spring Boot** no backend e **Angular** no frontend, integrados por meio de uma API REST.
+O projeto utiliza **Spring Boot** no backend e **Angular** no frontend, integrados por meio de uma API REST, com persistência de dados em PostgreSQL.
 
 ## 🚀 Tecnologias utilizadas
 
@@ -45,13 +45,14 @@ O projeto utiliza **Spring Boot** no backend e **Angular** no frontend, integrad
 - Navegação entre listas de compras e produtos.
 - Integração com a API REST.
 - Gerenciamento de listas e produtos por meio de uma interface web.
+- Comunicação entre frontend e backend.
 
 ## 🏗️ Arquitetura
 
 O projeto está dividido em duas aplicações independentes:
 
 - **Backend:** responsável pelas regras de negócio, persistência de dados e disponibilização dos endpoints REST.
-- **Frontend:** responsável pela interface e interação com o usuário.
+- **Frontend:** responsável pela interface e interação com o usuário, consumindo os serviços disponibilizados pela API.
 
 ## ▶️ Como executar o projeto
 
@@ -60,7 +61,8 @@ O projeto está dividido em duas aplicações independentes:
 1. Clone o repositório.
 2. Configure a conexão com o PostgreSQL.
 3. Crie o banco de dados `smartlist`.
-4. Execute a aplicação Spring Boot.
+4. Configure as credenciais do banco de dados.
+5. Execute a aplicação Spring Boot.
 
 ### Frontend
 
@@ -82,7 +84,7 @@ Execute a aplicação:
 ng serve
 ```
 
-Acesse:
+Acesse pelo navegador:
 
 ```text
 http://localhost:4200
@@ -90,9 +92,9 @@ http://localhost:4200
 
 ## 📌 Status do projeto
 
-🚧 Em desenvolvimento.
+<badge>Concluído</badge>
 
-O backend já possui as operações CRUD de listas de compras e produtos. O frontend está em desenvolvimento, utilizando Angular.
+Aplicação Full Stack desenvolvida com Spring Boot e Angular, contemplando operações CRUD para gerenciamento de listas de compras e produtos, com integração entre frontend e backend.
 
 ## 🎯 Objetivo
 
@@ -106,5 +108,5 @@ Estudante de Análise e Desenvolvimento de Sistemas (ADS), com foco em desenvolv
 
 ### 🔗 Links
 
-- GitHub: `ErickLeo01`
-- LinkedIn: `erick-leonardo87`
+- GitHub: [ErickLeo01](https://github.com/ErickLeo01)
+- LinkedIn: [erick-leonardo87](https://www.linkedin.com/in/erick-leonardo87/)
